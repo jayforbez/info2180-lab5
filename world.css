@@ -1,1 +1,114 @@
-/* Add your own styles */
+
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f7fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4a5568;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Main content */
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+/* Search controls */
+#controls {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#country {
+    padding: 10px;
+    width: 300px;
+    max-width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #3182ce;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#lookup {
+    background-color: #38a89d;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Result area */
+#result {
+    overflow-x: auto;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #e8edf2;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row colours */
+tr:nth-child(even) {
+    background-color: #f1f6fa;
+}
+
+/* Table hover */
+tr:hover {
+    background-color: #e3edf7;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+
+    main {
+        width: 95%;
+    }
+
+    #country {
+        width: 90%;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+}
